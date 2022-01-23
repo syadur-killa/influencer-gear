@@ -92,7 +92,6 @@ main p{
     border-radius: 5px;
     background-color: white;
     padding: 15px;
-    
 }
 .item-banner{
     align-content: center;
@@ -121,14 +120,14 @@ main p{
 .fa-star.empty{
     color: #858072;
 }
-.course-duration{
+/* .course-duration{
     background-color: coral;
     border-radius: 10px;
     color: cornsilk;
     margin-left: 10px;
     padding: 2px;
 
-}
+} */
 
 
 
@@ -163,6 +162,15 @@ footer {
  @media only screen and  (max-width: 688px){
     .navigation{
         width: 100%;
+    }
+
+    .flex-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+        align-items: center;
+        justify-items: center;
+        
     }
     .items{  
         grid-template-columns: repeat(1, 1fr);
