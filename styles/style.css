@@ -1,0 +1,200 @@
+/* Navigation  */
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.0em;
+    margin-right: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    margin-left: 150px;
+}
+
+
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+main{
+   
+    padding: 150px;
+    padding-top: 50px;
+}
+
+main h1{
+    font-size: 40px;
+}
+main p{
+    font-size: 20px;
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+
+.link-button{
+    text-decoration: none;
+    background-color: #ff1764;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+
+/* Logo  */
+.logo{
+    display: flex;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+
+
+
+/*----------------
+ Collection 
+ ---------------*/
+ .collection{
+     margin-top: 100px;
+ }
+
+ .section-title{
+    text-align: center;
+ }
+
+ .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    background-color: whitesmoke;
+    
+}
+
+.item{
+
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    
+}
+.item-banner{
+    align-content: center;
+}
+.item img{
+    height: 256px;
+    width: 300px;
+    border-radius: 5px;
+
+}
+.item-info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    size: 14px;
+}
+.price{
+    margin: 0%;
+}
+.fa-sta{
+    font-size: 12px;
+}
+.fa-star.field{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #858072;
+}
+.course-duration{
+    background-color: coral;
+    border-radius: 10px;
+    color: cornsilk;
+    margin-left: 10px;
+    padding: 2px;
+
+}
+
+
+
+
+
+/* Footer  */
+
+footer {
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #0A043C;
+    color: #fff;
+}
+.myMision{
+    text-align: center;
+    width: 100%;
+}
+.footer-icon{
+    margin-top: 0px;
+}
+.footer-icons{
+    margin-top: 0;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+
+/* Mobile Divices
+ ----------- */
+
+ @media only screen and  (max-width: 688px){
+    .navigation{
+        width: 100%;
+    }
+    .items{  
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+    }
+    footer{
+        align-content: center;
+    }
+    /* .player, .blog{
+        flex-direction: column;
+    }
+    .course-info{
+        padding-right: 20px;
+    } */
+}
+
+
+/* Tablate diveces 
+ */
+ @media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .players{
+        background-color: crimson;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course{
+        width: 100%;
+    }
+ }
+
