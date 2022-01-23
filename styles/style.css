@@ -14,11 +14,11 @@ nav{
     margin-left: 150px;
 }
 
+/* Body  */
 
 body{
     margin: 0px;
     font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
@@ -34,7 +34,7 @@ main h1{
     font-size: 40px;
 }
 main p{
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .flex-container{
@@ -71,20 +71,19 @@ main p{
 /*----------------
  Collection 
  ---------------*/
- .collection{
+.collection{
      margin-top: 100px;
  }
 
- .section-title{
+.section-title{
     text-align: center;
  }
 
- .items{
+.items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    background-color: whitesmoke;
-    
+    background-color: whitesmoke; 
 }
 
 .item{
@@ -108,6 +107,9 @@ main p{
     justify-content: start;
     size: 14px;
 }
+.iteminfo{
+    size: 10px;
+}
 .price{
     margin: 0%;
 }
@@ -120,18 +122,47 @@ main p{
 .fa-star.empty{
     color: #858072;
 }
-/* .course-duration{
-    background-color: coral;
-    border-radius: 10px;
-    color: cornsilk;
-    margin-left: 10px;
-    padding: 2px;
 
-} */
+.link-collection{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 30px;  
+}
+
+.link-button1{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    color: chocolate;
+}
 
 
+/* Customers */
 
+.customers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
 
+.customer-id{
+    align-content: center;
+    background-color: cornsilk;
+    padding: 20px;
+}
+
+.customer-id img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.customer-id p{
+    font-size: 12px;
+    font-weight: 100;
+}
 
 /* Footer  */
 
@@ -160,49 +191,93 @@ footer {
  ----------- */
 
  @media only screen and  (max-width: 688px){
+    nav a{
+        margin-right: 5px;
+    }
+    nav{
+        height: 40px;
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    main{
+        padding: 10px;
+        padding-top: 30px;
+    }
     .navigation{
         width: 100%;
     }
 
     .flex-container{
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
-        align-items: center;
-        justify-items: center;
-        
+        align-items: center;        
+    }
+    .logo{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        padding: 0px;
+        background-color: white;
     }
     .items{  
         grid-template-columns: repeat(1, 1fr);
-        align-content: center;
+        align-items: center;
     }
     footer{
         align-content: center;
     }
-    /* .player, .blog{
-        flex-direction: column;
+    .influencer{
+        max-width: 688px;
     }
-    .course-info{
-        padding-right: 20px;
-    } */
+    .customers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
 }
 
 
 /* Tablate diveces 
  */
  @media only screen and (min-width: 688px) and (max-width: 992px){
-    .container{
+    nav a{
+        margin-right: 15px;
+    }
+    nav{
+        height: 40px;
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    main{
+        padding: 20px;
+        padding-top: 30px;
+    }
+    .navigation{
         width: 100%;
     }
-    .players{
-        background-color: crimson;
+
+    .flex-container{
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+        align-items: center;        
     }
-    .blogs, .courses{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .course{
+    .logo{
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        padding: 0px;
+        background-color: white;
+    }
+    .items{  
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    footer{
+        align-content: center;
     }
  }
 
